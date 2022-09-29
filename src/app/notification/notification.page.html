@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>notification</ion-title>
+  </ion-toolbar>
+  <h5><u><i>Notification demo using Angular Material !!</i></u></h5>
+<mat-toolbar color="primary">
+<span>Menu</span>
+<span class="spacer"></span>
+<button mat-icon-button >
+<mat-icon class="icon">notifications</mat-icon>
+<span class="badge" *ngIf="notificationNumberCount > 0">{{notificationNumberCount}}</span>
+</button>
+<button mat-icon-button >
+<mat-icon class="icon">add_shopping_cart</mat-icon>
+<span class="badge" *ngIf="notificationNumberCount > 0">{{notificationNumberCount}}</span>
+</button>
+<button mat-icon-button >
+<mat-icon class="icon">circle_notifications</mat-icon>
+<span class="badge" *ngIf="notificationNumberCount > 0">{{notificationNumberCount}}</span>
+</button>
+</mat-toolbar>
+<br/><br/> <br/>
+<button mat-raised-button (click)="increment()">
+<mat-icon class="icon">plus_one</mat-icon>
+</button>
+<button mat-raised-button (click)="clear()">
+<mat-icon class="icon">autorenew</mat-icon>
+</button>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
